@@ -1,0 +1,42 @@
+#logo{
+    width: 322px;
+  height: 83px;
+  font-family: HelveticaNeue;
+  font-size: 60px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--white);
+}
+
+#catchphrase{
+    width: 1151px;
+  height: 187px;
+  font-family: HelveticaNeue;
+  font-size: 43px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--white);
+}
+
+#loginbutton{
+    width: 427.1px;
+    height: 60px;
+    border-radius: 35px;
+    background-color: #176ae6;
+}
+
+.logbox{
+    width: 427.1px;
+  height: 59.8px;
+  border-radius: 35px;
+  border: solid 1px #176ae6;
+  background-color: var(--white);
+}
