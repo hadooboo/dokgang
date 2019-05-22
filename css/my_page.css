@@ -53,12 +53,12 @@ body { background-color: #BFFFB8}
 	height: 375px;
 	background-color: #F6FFCC;
 	border: 2px solid black;
-	
+	position: relative;
 }
 
 
 .classname {
-	height: 70px;
+	height: 65px;
 	text-align: left;
 	font-size: 20px;
 	font-weight: 600;
@@ -73,8 +73,80 @@ body { background-color: #BFFFB8}
 }
 
 .matchingcardlist {
-	margin-top: 25px; margin-left: 35px;
+	margin-top: 15px; margin-left: 35px; margin-bottom: 12px;
 	text-align: left;
 	font-size: 15px;
 	font-weight: 600;
+}
+
+.matchingvalidtill {
+	margin-bottom: 12px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 17px;
+	color: #B70095;
+}
+
+.matchingcomplete {
+	margin-bottom: 12px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 17px;
+	color: #00B700;
+}
+
+.acceptbutton {
+	position: absolute;
+	left: 22px;
+	height: 40px;
+	width: 80px;
+	color: #fff;
+	font-weight: 600;
+	background-color: #2478FF;
+	border-radius: 8px;
+}
+
+.acceptbutton:hover {
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+}
+
+.declinebutton {
+	position: absolute;
+	right: 22px;
+	height: 40px;
+	width: 80px;
+	color: #fff;
+	font-weight: 600;
+	background-color: #FF4848;
+	border-radius: 8px;
+}
+
+.declinebutton:hover {
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+}
+
+.waitingbutton {
+	margin-left: auto; margin-right: auto;
+	display: block;
+	height: 40px;
+	width: 160px;
+	color: black;
+	font-weight: 600;
+	background-color: #CFCFCF;
+	border-radius: 8px;
+}
+
+.messagebutton {
+	margin-left: auto; margin-right: auto;
+	display: block;
+	height: 40px;
+	width: 160px;
+	color: black;
+	font-weight: 600;
+	background-color: #00B4DB;
+	border-radius: 8px;
+}
+
+.messagebutton:hover {
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
 }
