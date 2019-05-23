@@ -30,17 +30,20 @@
 		<div id="logo"><h1>LOGO</h1></div>
 
 		<h2 class="function">내 프로필</h2>
-		<div class="avatar"><img src="images/woman-avatar.png" width="100"></div>
-		<div id="profile"><ul>
-			<li>익명 매칭 여부 <input type="checkbox" name="anonymous" value="anonymous" title="온라인에서만 익명으로 만나기를 희망하실 경우 체크해주세요."></li> 
-			<li>성별: 남자/여자</li>
-			<li>학번: 15학번</li>
-			<li>단과대 과: 경영대학 경영학과</li>
-		</ul></div>
+		<div class="child_functionbox">
+			<div class="avatar"><img src="images/woman-avatar.png" width="100"></div>
+			<div id="profile"><ul>
+				<li>익명 매칭 여부 <input type="checkbox" name="anonymous" value="anonymous" title="온라인에서만 익명으로 만나기를 희망하실 경우 체크해주세요."></li> 
+				<li>성별: 남자/여자</li>
+				<li>학번: 15학번</li>
+				<li>단과대 과: 경영대학 경영학과</li>
+			</ul></div>
+		</div>
 
 		<h2 class="function">강좌 관리</h2>
 			<h3 class="child_function">강의 등록</h3>
-				<h4 class="warning">* 수강하지 않는 강의를 등록 시 서비스 이용이 제한될 수 있습니다.</h4>
+				<div class="child_functionbox">
+					<h4 class="warning">* 수강하지 않는 강의를 등록 시 서비스 이용이 제한될 수 있습니다.</h4>
 				    <div class="s003"> <!-- 검색창 -->
 				      <form>
 				        <div class="inner-form">
@@ -203,11 +206,12 @@
 					<script src="vendor/select2/select2.min.js"></script>
 				<!--===============================================================================================-->
 					<script src="js/main.js"></script>
-			<br>
+			</div><br><br>
 
 
 			<h3 class="child_function">내 강의</h3>
-				<h4 class="warning">* 등록한 강의는 매칭 성공 시 자동으로 내 강의에서 삭제됩니다. (매칭 승인 기한 초과 시에도 자동 삭제)</h4>
+				<div class="child_functionbox">
+					<h4 class="warning">* 등록한 강의는 매칭 성공 시 자동으로 내 강의에서 삭제됩니다. (매칭 승인 기한 초과 시에도 자동 삭제)</h4>
 
 							    <br>
 						<div class="container-table100">
@@ -259,6 +263,7 @@
 					<script src="vendor/select2/select2.min.js"></script>
 				<!--===============================================================================================-->
 					<script src="js/main.js"></script>
+			</div>
 
 		<h2 class="function">매칭 내역
 			<select>
@@ -299,8 +304,55 @@
 
 
 		<h2 class="function">계정 관리</h2>
-			<h3 class="child_function">이메일: ~~~~</h3>
-			<h3 class="child_function">비밀번호 변경</h3>
-			<h3 class="child_function">회원 탈퇴</h3>
+			<h3 class="child_function">이메일: sean0820@snu.ac.kr</h3>
+			
+			<button onclick="change_password()" id="changepsw_btn">비밀번호 변경</button>
+				<div id="changepsw" style="display: none;">
+					<b>현재 비밀번호:</b><br>
+					<input type="password" name="current_password"> <br>
+					<b>새 비밀번호:</b><br>
+					<input type="password" name="new_password"> <br>
+					<b>비밀번호 확인:</b><br>
+					<input type="password" name="verify_password"> <br><br>
+					<input type="submit" value="저장하기" id="pswconfirm_btn">
+				</div>
+					<script>
+					function change_password() {
+					  var x = document.getElementById("changepsw");
+					  if (x.style.display === "none") {
+					    x.style.display = "block";
+					  } else {
+					    x.style.display = "none";
+					  }
+					}
+					</script>
+			<br><br>		
+
+			<button onclick="byebye()" id="byebye_btn">서비스 탈퇴</button>
+				<div id="byebye" style="display: none;">
+					<b>현재 비밀번호:</b><br>
+					<input type="password" name="current_password"> <br><br>
+					<p><b>그동안 저희 서비스를 이용해주셔서 감사합니다.<b></p>
+					<button type="button" onclick="askbye()" id="byeconfirm_btn">탈퇴하기</button>
+				</div>
+					<script>
+					function byebye() {
+					  var x = document.getElementById("byebye");
+					  if (x.style.display === "none") {
+					    x.style.display = "block";
+					  } else {
+					    x.style.display = "none";
+					  }
+					}
+					function askbye() {
+					  if (confirm("정말로 탈퇴하시겠습니까?") == true){    //확인
+					      document.form.submit();
+					  }else{   //취소
+					      return;
+					  }
+					}
+					</script>
+			<br><br><br>
+			
 	</body>
 </html>
