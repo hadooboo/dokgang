@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+}
+
+body { background-color: #BFFFB8}
+
+.function {
+	display: block;
+	margin: 40px;
+}
+
+#logo {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+} 
+.avatar {
+	float: left;
+	width: 105px;
+	height: 105px;
+	border: 1px solid blue;
+	background-color: #F6FFCC;
+	margin-left: 30px;
+}
+
+#profile {
+	display: inline-block;
+	width: 700px;
+}
+
+.child_function {
+	margin-left: 80px;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.child_functionbox {
+	margin-left: 80px;
+}
+
+.warning {
+	color: #FF3636;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+#matchingbox {
+	overflow: auto;
+	width: 100%;
+	margin-left: 40px;
+}
+
+.matchingcard {
+	float: left;
+	margin-left: 40px;
+	padding: 10px;
+	width: 250px;
+	height: 375px;
+	background-color: #F6FFCC;
+	border: 2px solid black;
+	position: relative;
+}
+
+
+.classname {
+	height: 65px;
+	text-align: left;
+	font-size: 20px;
+	font-weight: 600;
+	color: #006579;
+
+}
+
+.matchingcardavatar {
+	width: 120px;
+	display: block;
+	margin-left: auto; margin-right: auto;
+}
+
+.matchingcardlist {
+	margin-top: 15px; margin-left: 35px; margin-bottom: 12px;
+	text-align: left;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.matchingvalidtill {
+	margin-bottom: 12px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 17px;
+	color: #B70095;
+}
+
+.matchingcomplete {
+	margin-bottom: 12px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 17px;
+	color: #00B700;
+}
+
+.acceptbutton {
+	position: absolute;
+	left: 22px;
+	height: 40px;
+	width: 80px;
+	color: #fff;
+	font-weight: 600;
+	background-color: #2478FF;
+	border-radius: 8px;
+}
+
+.acceptbutton:hover {
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+}
+
+.declinebutton {
+	position: absolute;
+	right: 22px;
+	height: 40px;
+	width: 80px;
+	color: #fff;
+	font-weight: 600;
+	background-color: #FF4848;
+	border-radius: 8px;
+}
+
+.declinebutton:hover {
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+}
+
+.waitingbutton {
+	margin-left: auto; margin-right: auto;
+	display: block;
+	height: 40px;
+	width: 160px;
+	color: black;
+	font-weight: 600;
+	background-color: #CFCFCF;
+	border-radius: 8px;
+}
+
+.messagebutton {
+	margin-left: auto; margin-right: auto;
+	display: block;
+	height: 40px;
+	width: 160px;
+	color: black;
+	font-weight: 600;
+	background-color: #00B4DB;
+	border-radius: 8px;
+}
+
+.messagebutton:hover {
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+}
+
+#changepsw_btn {
+	margin-left: 80px;
+	height: 40px;
+	width: 160px;
+	color: black;
+	font-weight: 600;
+	background-color: #909090;
+	border-radius: 5px;
+}
+
+#changepsw_btn:hover {
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+}
+
+#changepsw {
+	margin-left: 80px; margin-top: 20px;
+}
+
+#pswconfirm_btn {
+	height: 35px;
+	width: 80px;
+	color: black;
+	font-weight: 600;
+	background-color: #489CFF;
+	border-radius: 3px;
+}
+
+#pswconfirm_btn:hover {
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+}
+
+#byebye_btn {
+	margin-left: 80px;
+	height: 40px;
+	width: 160px;
+	color: #fff;
+	font-weight: 600;
+	background-color: #363636;
+	border-radius: 5px;
+}
+
+#changepsw_btn:hover {
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+}
+
+#byebye {
+	margin-left: 80px; margin-top: 20px;
+}
+
+#byeconfirm_btn {
+	height: 35px;
+	width: 80px;
+	color: #fff;
+	font-weight: 600;
+	background-color: #FF4848;
+	border-radius: 3px;
+}
+
+#byeconfirm_btn:hover {
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+}
