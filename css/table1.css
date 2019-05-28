@@ -68,7 +68,7 @@ iframe {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  width: 85%;
+  width: 100%;
   max-height: 500px;
   overflow: auto;
   margin-left: 14px;
@@ -116,18 +116,18 @@ table td.r, table th.r {
 
 .table100-head th{
   font-family: OpenSans-Regular;
-  font-size: 18px;
-  color: #fff;
-  line-height: 1.2;
+  font-size: 18px !important;
+  color: #fff !important;
+  line-height: 3.0 !important;
   font-weight: unset;
 }
 
 .table100-head2 th{
   font-family: OpenSans-Regular;
-  font-size: 18px;
+  font-size: 18px !important;
   background-color: #006E00;
-  color: #fff;
-  line-height: 1.2;
+  color: #fff !important;
+  line-height: 3.0 !important;
   font-weight: unset;
 }
 
@@ -144,14 +144,14 @@ tbody tr {
 }
 
 tbody tr:hover {
-  color: #555555;
-  background-color: #B6FFFF;
+  color: #555555 !important;
+  background-color: #B6FFFF !important;
   cursor: pointer;
 }
 
 .column1 {
   width: 320px;
-  padding-left: 20px;
+  padding-left: 15px;
   padding-right: 10px;
   font-weight: bold;
   color: #484848;
@@ -163,7 +163,7 @@ tbody tr:hover {
 }
 
 .column3 {
-  width: 230px;
+  width: 200px;
   padding-right: 10px;
 }
 

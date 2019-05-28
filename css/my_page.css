@@ -2,11 +2,15 @@
   box-sizing: border-box;
 }
 
-body { background-color: #BFFFB8}
+@import url(font-awesome.min.css);
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
+
+
+
 
 .function {
 	display: block;
-	margin: 40px;
+	margin: 80px 0px 40px 40px;
 }
 
 #logo {
@@ -18,28 +22,28 @@ body { background-color: #BFFFB8}
 	float: left;
 	width: 105px;
 	height: 105px;
-	border: 1px solid blue;
+	border: 1px solid black;
 	background-color: #F6FFCC;
-	margin-left: 30px;
 }
 
 #profile {
 	display: inline-block;
-	width: 700px;
+	margin-left: 30px;
 }
 
 .child_function {
-	margin-left: 80px;
+	margin-left: 15px;
 	margin-bottom: 20px;
 	font-size: 20px;
+	font-weight: 500;
 }
 
 .child_functionbox {
-	margin-left: 80px;
+	margin-left: 15px;
 }
 
 .warning {
-	color: #FF3636;
+	color: #FF3636 !important;
 	font-size: 12px;
 	font-weight: 700;
 }
@@ -47,12 +51,12 @@ body { background-color: #BFFFB8}
 #matchingbox {
 	overflow: auto;
 	width: 100%;
-	margin-left: 40px;
+	height: 450px;
 }
 
 .matchingcard {
 	float: left;
-	margin-left: 40px;
+	margin-right: 70px; margin-bottom: 35px;
 	padding: 10px;
 	width: 250px;
 	height: 375px;
@@ -85,7 +89,7 @@ body { background-color: #BFFFB8}
 }
 
 .matchingvalidtill {
-	margin-bottom: 12px;
+	margin-bottom: 10px;
 	text-align: center;
 	font-weight: 700;
 	font-size: 17px;
@@ -93,7 +97,7 @@ body { background-color: #BFFFB8}
 }
 
 .matchingcomplete {
-	margin-bottom: 12px;
+	margin-bottom: 10px;
 	text-align: center;
 	font-weight: 700;
 	font-size: 17px;
@@ -101,14 +105,15 @@ body { background-color: #BFFFB8}
 }
 
 .acceptbutton {
-	position: absolute;
-	left: 22px;
-	height: 40px;
-	width: 80px;
-	color: #fff;
-	font-weight: 600;
-	background-color: #2478FF;
-	border-radius: 8px;
+	position: absolute !important;
+	left: 22px !important;
+	height: 35px !important;
+	width: 80px !important;
+	color: #fff !important;
+	font-weight: 600 !important;
+	background-color: #2478FF !important;
+	border-radius: 8px !important;
+	cursor: pointer;
 }
 
 .acceptbutton:hover {
@@ -116,14 +121,15 @@ body { background-color: #BFFFB8}
 }
 
 .declinebutton {
-	position: absolute;
-	right: 22px;
-	height: 40px;
-	width: 80px;
-	color: #fff;
-	font-weight: 600;
-	background-color: #FF4848;
-	border-radius: 8px;
+	position: absolute !important;
+	right: 22px !important;
+	height: 35px !important;
+	width: 80px !important;
+	color: #fff !important;
+	font-weight: 600 !important;
+	background-color: #FF4848 !important;
+	border-radius: 8px !important;
+	cursor: pointer;
 }
 
 .declinebutton:hover {
@@ -131,25 +137,26 @@ body { background-color: #BFFFB8}
 }
 
 .waitingbutton {
-	margin-left: auto; margin-right: auto;
-	display: block;
-	height: 40px;
-	width: 160px;
-	color: black;
-	font-weight: 600;
-	background-color: #CFCFCF;
-	border-radius: 8px;
+	margin-left: auto !important; margin-right: auto !important;
+	display: block !important;
+	height: 35px !important;
+	width: 160px !important;
+	color: black !important;
+	font-weight: 600 !important;
+	background-color: #CFCFCF !important;
+	border-radius: 8px !important;
 }
 
 .messagebutton {
-	margin-left: auto; margin-right: auto;
-	display: block;
-	height: 40px;
-	width: 160px;
-	color: black;
-	font-weight: 600;
-	background-color: #00B4DB;
-	border-radius: 8px;
+	margin-left: auto !important; margin-right: auto !important;
+	display: block !important;
+	height: 35px !important;
+	width: 160px !important;
+	color: black !important;
+	font-weight: 600 !important;
+	background-color: #00B4DB !important;
+	border-radius: 8px !important;
+	cursor: pointer;
 }
 
 .messagebutton:hover {
@@ -157,13 +164,15 @@ body { background-color: #BFFFB8}
 }
 
 #changepsw_btn {
-	margin-left: 80px;
-	height: 40px;
+	margin-top: 20px;
+	margin-left: 15px;
+	height: 35px;
 	width: 160px;
 	color: black;
 	font-weight: 600;
 	background-color: #909090;
 	border-radius: 5px;
+	cursor: pointer;
 }
 
 #changepsw_btn:hover {
@@ -171,16 +180,18 @@ body { background-color: #BFFFB8}
 }
 
 #changepsw {
-	margin-left: 80px; margin-top: 20px;
+	margin-top: 20px;
+	margin-left: 15px;
 }
 
 #pswconfirm_btn {
-	height: 35px;
-	width: 80px;
-	color: black;
-	font-weight: 600;
-	background-color: #489CFF;
-	border-radius: 3px;
+	height: 35px !important;
+	width: 90px !important;
+	color: black !important;
+	font-weight: 600 !important;
+	background-color: #489CFF !important;
+	border-radius: 3px !important;
+	cursor: pointer;
 }
 
 #pswconfirm_btn:hover {
@@ -188,30 +199,34 @@ body { background-color: #BFFFB8}
 }
 
 #byebye_btn {
-	margin-left: 80px;
-	height: 40px;
-	width: 160px;
-	color: #fff;
-	font-weight: 600;
-	background-color: #363636;
-	border-radius: 5px;
+	margin-top: 15px;
+	margin-left: 15px;
+	height: 35px !important;
+	width: 160px !important;
+	color: #fff !important;
+	font-weight: 600 !important;
+	background-color: #363636 !important;
+	border-radius: 5px !important;
+	cursor: pointer;
 }
 
-#changepsw_btn:hover {
+#byebye_btn:hover {
      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
 }
 
 #byebye {
-	margin-left: 80px; margin-top: 20px;
+	margin-top: 20px;
+	margin-left: 15px;
 }
 
 #byeconfirm_btn {
-	height: 35px;
-	width: 80px;
-	color: #fff;
-	font-weight: 600;
-	background-color: #FF4848;
-	border-radius: 3px;
+	height: 35px !important;
+	width: 90px !important;
+	color: #fff !important;
+	font-weight: 600 !important;
+	background-color: #FF4848 !important;
+	border-radius: 3px !important;
+	cursor: pointer;
 }
 
 #byeconfirm_btn:hover {
