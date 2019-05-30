@@ -32,7 +32,6 @@
 }
 
 .child_function {
-	margin-left: 15px;
 	margin-bottom: 20px;
 	font-size: 20px;
 	font-weight: 500;
@@ -165,7 +164,6 @@
 
 #changepsw_btn {
 	margin-top: 20px;
-	margin-left: 15px;
 	height: 35px;
 	width: 160px;
 	color: black;
@@ -181,10 +179,9 @@
 
 #changepsw {
 	margin-top: 20px;
-	margin-left: 15px;
 }
 
-#pswconfirm_btn {
+.pswconfirm_btn {
 	height: 35px !important;
 	width: 90px !important;
 	color: black !important;
@@ -194,13 +191,12 @@
 	cursor: pointer;
 }
 
-#pswconfirm_btn:hover {
+.pswconfirm_btn:hover {
      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
 }
 
 #byebye_btn {
 	margin-top: 15px;
-	margin-left: 15px;
 	height: 35px !important;
 	width: 160px !important;
 	color: #fff !important;
@@ -216,7 +212,6 @@
 
 #byebye {
 	margin-top: 20px;
-	margin-left: 15px;
 }
 
 #byeconfirm_btn {
@@ -231,4 +226,8 @@
 
 #byeconfirm_btn:hover {
      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+}
+
+.faqquestion {
+	font-weight: 700;
 }
